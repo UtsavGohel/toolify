@@ -3,9 +3,22 @@
 import Link from "next/link";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
-import { Search, Settings, Sun, Moon, Menu, Shield, ScrollText } from "lucide-react";
+import {
+  Search,
+  Settings,
+  Sun,
+  Moon,
+  Menu,
+  Shield,
+  ScrollText,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet";
+import {
+  Sheet,
+  SheetContent,
+  SheetTrigger,
+  SheetTitle,
+} from "@/components/ui/sheet";
 import { Sidebar } from "@/components/layout/sidebar";
 import {
   DropdownMenu,
@@ -35,9 +48,10 @@ export function SiteHeader() {
     setMounted(true);
   }, []);
 
-  const filteredTools = tools.filter((tool) =>
-    tool.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-    tool.description.toLowerCase().includes(searchQuery.toLowerCase())
+  const filteredTools = tools.filter(
+    (tool) =>
+      tool.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      tool.description.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
   const handleToolSelect = (toolId: string) => {
@@ -55,7 +69,7 @@ export function SiteHeader() {
       <div className="container flex h-14 items-center">
         <div className="mr-4 hidden md:flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
-            <span className="font-bold text-lg">Micro Tools Hub</span>
+            <span className="ml-2 font-bold text-lg">Micro Tools Hub</span>
           </Link>
         </div>
         <Sheet>
@@ -75,9 +89,9 @@ export function SiteHeader() {
         </Link>
         <div className="flex flex-1 items-center justify-end space-x-2">
           <div className="w-full flex-1 md:w-auto md:flex-none">
-            <Button 
-              variant="outline" 
-              size="icon" 
+            <Button
+              variant="outline"
+              size="icon"
               className="mr-2"
               onClick={() => setSearchOpen(true)}
             >

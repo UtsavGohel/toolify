@@ -2,7 +2,7 @@
 
 A collection of free, privacy-focused utility tools built with Next.js and TypeScript. Access commonly needed tools in one place without tracking or ads.
 
-![image](https://github.com/user-attachments/assets/4262eb1e-6c92-466c-a6f1-37a867b4aa08)
+![image](https://github.com/user-attachments/assets/06629ab0-9590-4f0c-a69b-7f98ba31a7ad)
 
 
 ## 🛠️ Available Tools

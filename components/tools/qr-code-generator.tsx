@@ -77,7 +77,11 @@ export function QRCodeGenerator() {
   // Generate QR code whenever text changes
   useEffect(() => {
     const timeoutId = setTimeout(() => {
-      generateQR();
+      if (isValidUrl(text)) {
+        generateQR();
+      } else {
+        setQrCode(""); // Clear QR code if URL is invalid
+      }
     }, 300); // Debounce for better performance
 
     return () => clearTimeout(timeoutId);

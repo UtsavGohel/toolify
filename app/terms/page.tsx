@@ -101,7 +101,7 @@ export default function TermsOfService() {
             <h2 className="text-xl font-semibold mb-4">8. Contact</h2>
             <p>
               Questions about the Terms of Service should be sent to:
-              terms@microtools.com
+              dev.torktoo@gmail.com
             </p>
           </section>
         </CardContent>

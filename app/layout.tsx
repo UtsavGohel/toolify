@@ -14,11 +14,11 @@ export const metadata: Metadata = {
     "A collection of free online utility tools including word counter, password generator, QR code generator, color picker, and more.",
   keywords:
     "utility tools, online tools, free tools, web tools, word counter, password generator, QR code generator, color picker",
-  metadataBase: new URL("https://microtools.com"),
+  metadataBase: new URL("https://toolify.torktoo.com/"),
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://microtools.com",
+    url: "https://toolify.torktoo.com/",
     title: "Micro Tools Hub - Free Online Utility Tools",
     description:
       "A collection of free online utility tools including word counter, password generator, QR code generator, color picker, and more.",

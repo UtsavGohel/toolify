@@ -35,6 +35,7 @@ export function QRCodeGenerator() {
 
   const qrRef = useRef<HTMLDivElement>(null);
 
+  // Generate QR code function
   const generateQR = async () => {
     if (!text) {
       setQrCode("");
@@ -80,7 +81,7 @@ export function QRCodeGenerator() {
       if (isValidUrl(text)) {
         generateQR();
       } else {
-        setQrCode(""); // Clear QR code if URL is invalid
+        setQrCode(""); // Clear QR code if text is empty
       }
     }, 300); // Debounce for better performance
 
@@ -99,7 +100,7 @@ export function QRCodeGenerator() {
     document.body.removeChild(link);
   };
 
-  // URL validation
+  // URL validation function
   const isValidUrl = (str: string) => {
     try {
       new URL(str);
@@ -124,11 +125,11 @@ export function QRCodeGenerator() {
       </CardHeader>
       <CardContent>
         <Tabs defaultValue="url" className="w-full">
-          <TabsList className="grid w-full grid-cols-2">
+          <TabsList className="grid w-full grid-cols-1">
             <TabsTrigger value="url">URL</TabsTrigger>
-            <TabsTrigger value="text">Text</TabsTrigger>
           </TabsList>
 
+          {/* URL Tab */}
           <TabsContent value="url" className="space-y-4">
             <div className="grid gap-2">
               <Label htmlFor="url">Enter URL</Label>
@@ -144,7 +145,7 @@ export function QRCodeGenerator() {
                 <Button
                   variant="outline"
                   size="icon"
-                  disabled={!text || !isValidUrl(text)}
+                  disabled={!text || !isValidUrl(text)} // Disable button if URL is invalid
                 >
                   <Smartphone className="h-4 w-4" />
                 </Button>
@@ -157,6 +158,7 @@ export function QRCodeGenerator() {
             </div>
           </TabsContent>
 
+          {/* Text Tab */}
           <TabsContent value="text" className="space-y-4">
             <div className="grid gap-2">
               <Label htmlFor="text">Enter Text</Label>
@@ -175,6 +177,7 @@ export function QRCodeGenerator() {
             </div>
           </TabsContent>
 
+          {/* Settings Panel */}
           <div className="grid grid-cols-1 gap-4 mt-4 md:grid-cols-2">
             <div className="space-y-4">
               <div className="grid gap-2">
@@ -258,6 +261,7 @@ export function QRCodeGenerator() {
               </div>
             </div>
 
+            {/* QR Code Preview */}
             <div
               className="flex flex-col items-center justify-center space-y-4"
               ref={qrRef}

@@ -9,7 +9,7 @@ import type { Metadata } from "next";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Micro Tools Hub - Free Online Utility Tools",
+  title: "Toolify - Free Online Utility Tools",
   description:
     "A collection of free online utility tools including word counter, password generator, QR code generator, color picker, and more.",
   keywords:
@@ -19,10 +19,10 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://toolify.torktoo.com/",
-    title: "Micro Tools Hub - Free Online Utility Tools",
+    title: "Toolify - Free Online Utility Tools",
     description:
       "A collection of free online utility tools including word counter, password generator, QR code generator, color picker, and more.",
-    siteName: "Micro Tools Hub",
+    siteName: "Toolify",
   },
   robots: {
     index: true,
@@ -79,8 +79,7 @@ export default function RootLayout({
             <footer className="border-t py-6">
               <div className="container flex flex-col items-center justify-center gap-4 md:h-14 md:flex-row">
                 <p className="text-center text-sm leading-loose text-muted-foreground">
-                  © {new Date().getFullYear()} Micro Tools Hub. All rights
-                  reserved.{" "}
+                  © {new Date().getFullYear()} Toolify. All rights reserved.{" "}
                   <Link
                     href="/privacy"
                     className="font-medium underline underline-offset-4"

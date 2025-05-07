@@ -9,8 +9,8 @@ import {
 import { ScrollText } from "lucide-react";
 
 export const metadata = {
-  title: "Terms of Service - Micro Tools Hub",
-  description: "Terms of service and conditions for using Micro Tools Hub",
+  title: "Terms of Service - Toolify",
+  description: "Terms of service and conditions for using Toolify",
 };
 
 export default function TermsOfService() {
@@ -32,8 +32,8 @@ export default function TermsOfService() {
               1. Acceptance of Terms
             </h2>
             <p>
-              By accessing and using Micro Tools Hub, you accept and agree to be
-              bound by the terms and provisions of this agreement.
+              By accessing and using Toolify, you accept and agree to be bound
+              by the terms and provisions of this agreement.
             </p>
           </section>
 
@@ -68,8 +68,8 @@ export default function TermsOfService() {
           <section className="mb-8">
             <h2 className="text-xl font-semibold mb-4">4. Limitations</h2>
             <p>
-              In no event shall Micro Tools Hub be liable for any damages
-              arising out of the use or inability to use our tools and services.
+              In no event shall Toolify be liable for any damages arising out of
+              the use or inability to use our tools and services.
             </p>
           </section>
 

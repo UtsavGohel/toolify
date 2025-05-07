@@ -22,12 +22,12 @@ export function generateMetadata({ params }: ToolPageProps): Metadata {
 
   if (!tool) {
     return {
-      title: "Tool Not Found - Micro Tools Hub",
+      title: "Tool Not Found - Toolify",
     };
   }
 
   return {
-    title: `${tool.name} - Micro Tools Hub`,
+    title: `${tool.name} - Toolify`,
     description: tool.description,
   };
 }

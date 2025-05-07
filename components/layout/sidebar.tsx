@@ -100,7 +100,7 @@ export function Sidebar() {
       <div className="py-4 px-3 border-b">
         <Link href="/" className="flex items-center space-x-2">
           <LucideIcons.LayoutGrid className="h-6 w-6" />
-          <span className="font-bold text-lg">Micro Tools Hub</span>
+          <span className="font-bold text-lg">Toolify</span>
         </Link>
       </div>
       <ScrollArea className="flex-1">

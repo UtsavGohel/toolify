@@ -95,7 +95,7 @@ export default function Home() {
     <div className="container mx-auto py-10 px-4">
       <div className="max-w-4xl mx-auto text-center mb-12">
         <h1 className="text-4xl font-bold tracking-tight sm:text-5xl mb-4">
-          Micro Tools Hub
+          Toolify
         </h1>
         <p className="text-xl text-muted-foreground mb-8">
           A collection of free utility tools to boost your productivity

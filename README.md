@@ -1,4 +1,4 @@
-# Micro Tools Hub
+# Toolify
 
 A collection of free, privacy-focused utility tools built with Next.js and TypeScript. Access commonly needed tools in one place without tracking or ads.
 

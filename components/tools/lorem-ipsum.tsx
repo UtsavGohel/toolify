@@ -176,7 +176,7 @@ export function LoremIpsum() {
           Lorem Ipsum Generator
         </CardTitle>
         <CardDescription>
-          Generate placeholder text for your designs
+          Generate the placeholders for the text of your designs
         </CardDescription>
       </CardHeader>
       <CardContent>

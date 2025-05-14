@@ -9,7 +9,7 @@ A collection of free, privacy-focused utility tools built with Next.js and TypeS
 
 - **Text Tools**
   - Word Counter - Count words, characters, and estimate reading time
-  - Lorem Ipsum Generator - Generate placeholder text for designs
+  - Lorem Ipsum Generator - Generate the placeholders for the text of your designs
 
 - **Generators**
   - Password Generator - Create strong, secure passwords
